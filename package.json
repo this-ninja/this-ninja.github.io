@@ -1,0 +1,12 @@
+{
+  "name": "this-ninja.github.io",
+  "private": true,
+  "scripts": {
+    "apply:baseline": "node scripts/apply-baseline.js",
+    "generate:mcp": "node scripts/generate-mcp-configs.js",
+    "preflight:baseline": "node scripts/preflight-baseline.js",
+    "validate:overlays": "bash scripts/validate-overlay-rendering.sh",
+    "validate:fixtures": "bash scripts/validate-fixtures.sh",
+    "verify:baseline": "node scripts/verify-baseline.js"
+  }
+}

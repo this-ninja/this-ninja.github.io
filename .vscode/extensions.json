@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ms-azure-devops.azure-boards",
+    "ms-vscode.azure-account",
+    "github.copilot-chat",
+    "openai.chatgpt",
+    "github.vscode-pull-request-github",
+    "timonwong.shellcheck",
+    "foxundermoon.shell-format",
+    "redhat.vscode-yaml",
+    "davidanson.vscode-markdownlint"
+  ]
+}
+

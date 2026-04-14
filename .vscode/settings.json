@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true
+}

@@ -1,0 +1,76 @@
+{
+  "baseline_name": "repo-foundation",
+  "baseline_version": "0.1.0",
+  "source_repository": "repotemplatedev",
+  "source_commit": "e5680d4",
+  "timestamp": "2026-04-13T23:54:27.231Z",
+  "target_path": "/home/jdp/repos/github/this-ninja/this-ninja.github.io",
+  "modules_applied": [
+    "core",
+    "bootstrap",
+    "boards",
+    "codespaces",
+    "mcp"
+  ],
+  "files_written": [
+    ".codex/config.toml",
+    ".devcontainer/devcontainer.json",
+    ".devcontainer/post-create.sh",
+    ".devcontainer/post-start.sh",
+    ".github/agents/repotemplatedev-work-item-agent.agent.md",
+    ".github/copilot-instructions.md",
+    ".vscode/extensions.json",
+    ".vscode/mcp.json",
+    ".vscode/settings.json",
+    "AGENTS.md",
+    "README.md",
+    "docs/operations/manual-steps.md",
+    "docs/platform/repo-contract.md",
+    "docs/reference/current-state.md",
+    "docs/runbooks/agent-session-start.md",
+    "docs/runbooks/boards-crud.md",
+    "docs/runbooks/session-restart-checklist.md",
+    "docs/setup/getting-started.md",
+    "manifests/baseline.yaml",
+    "mcp.config.yaml",
+    "scripts/boards/close-work-item.sh",
+    "scripts/boards/common.sh",
+    "scripts/boards/resolve-work-item.sh",
+    "scripts/boards/show-work-item.sh",
+    "scripts/boards/start-work-item.sh",
+    "scripts/bootstrap/check-prereqs.sh",
+    "scripts/bootstrap/cleanup-git-hooks.sh",
+    "scripts/bootstrap/env-report.sh",
+    "scripts/bootstrap/install-linux-tooling.sh",
+    "scripts/bootstrap/login-ado.sh",
+    "scripts/bootstrap/login-azure.sh",
+    "scripts/bootstrap/login-github.sh",
+    "scripts/bootstrap/repo-env.sh",
+    "scripts/bootstrap/session-init.sh",
+    "scripts/bootstrap/session-snapshot.sh",
+    "scripts/bootstrap/setup-wsl.sh",
+    "scripts/bootstrap/verify-boards-crud.sh",
+    "scripts/bootstrap/wsl-shell-hook.sh",
+    "scripts/generate-mcp-configs.js",
+    "templates/session-handoff.md",
+    "templates/work-items/feature.md",
+    "templates/work-items/requirement.md",
+    "templates/work-items/task.md"
+  ],
+  "files_replaced": [
+    ".gitignore"
+  ],
+  "files_skipped": [
+    "package.json"
+  ],
+  "manual_review_items": [
+    "package.json"
+  ],
+  "package_script_merge": {
+    "status": "skipped",
+    "added_scripts": [],
+    "conflicting_scripts": [],
+    "details": "target package.json missing"
+  },
+  "dry_run": false
+}

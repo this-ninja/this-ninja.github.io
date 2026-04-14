@@ -1,0 +1,16 @@
+# Generated from mcp.config.yaml. Do not edit directly.
+# Update mcp.config.yaml and run: npm run generate:mcp
+
+[mcp_servers.github]
+type = "http"
+url = "https://api.githubcopilot.com/mcp/"
+
+[mcp_servers.filesystem]
+type = "stdio"
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-filesystem", "."]
+
+[mcp_servers.ado]
+type = "stdio"
+command = "npx"
+args = ["-y", "@azure-devops/mcp", "${AZURE_DEVOPS_ORG}"]

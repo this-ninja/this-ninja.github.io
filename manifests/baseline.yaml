@@ -1,0 +1,210 @@
+baseline:
+  name: repo-foundation
+  version: 0.1.0
+  source_repo: repotemplatedev
+  source_commit: e5680d4
+  shared:
+    variables:
+      repo_name: this-ninja.github.io
+      app_short_name: this-ninja.github.io
+    overlay_templates:
+
+    managed_files:
+      fully_managed:
+
+      merge_managed:
+
+      repo_owned:
+        - docs/runbooks/pilot-minimal-site-rollout.md
+        - docs/runbooks/release-baseline-version.md
+        - docs/reference/baseline-rollout-profiles.md
+        - docs/reference/repo-baseline-inventory.md
+        - docs/reference/repo-baseline-packaging.md
+        - docs/reference/baseline-template-variables.md
+    merge_policies:
+      replace:
+
+      manual_review:
+
+    merge_guidance:
+
+    merge_managed_actions:
+
+    manual_review_actions:
+
+  modules:
+    - name: core
+      enabled: true
+      prerequisites:
+
+      ownership:
+        variables:
+
+        overlay_templates:
+          - templates/baseline-overlays/README.md.tmpl
+          - templates/baseline-overlays/AGENTS.md.tmpl
+          - templates/baseline-overlays/docs/reference/current-state.md.tmpl
+        managed_files:
+          fully_managed:
+            - .gitignore
+            - docs/runbooks/agent-session-start.md
+            - docs/runbooks/session-restart-checklist.md
+            - templates/session-handoff.md
+          merge_managed:
+            - docs/operations/manual-steps.md
+            - docs/platform/repo-contract.md
+          repo_owned:
+
+        merge_policies:
+          replace:
+
+          manual_review:
+            - README.md
+        merge_guidance:
+          README.md: Existing repos keep their README content. For adoption, review the baseline README template and merge only the parts that make sense for the target repo.
+          docs/operations/manual-steps.md: Baseline apply manages the shared runbook structure and preserves the repo-local block. Legacy target files without preserve markers still require one-time manual review.
+          docs/platform/repo-contract.md: Baseline apply manages the shared contract and preserves the repo-local block. Legacy target files without preserve markers still require one-time manual review.
+        merge_managed_actions:
+          docs/operations/manual-steps.md: preserve_local_block
+          docs/platform/repo-contract.md: preserve_local_block
+        manual_review_actions:
+          README.md: target_rewrite
+    - name: bootstrap
+      enabled: true
+      prerequisites:
+
+      ownership:
+        variables:
+
+        overlay_templates:
+          - templates/baseline-overlays/scripts/bootstrap/env-report.sh.tmpl
+          - templates/baseline-overlays/scripts/bootstrap/repo-env.sh.tmpl
+        managed_files:
+          fully_managed:
+            - scripts/bootstrap/check-prereqs.sh
+            - scripts/bootstrap/cleanup-git-hooks.sh
+            - scripts/bootstrap/install-linux-tooling.sh
+            - scripts/bootstrap/login-azure.sh
+            - scripts/bootstrap/login-github.sh
+            - scripts/bootstrap/session-init.sh
+            - scripts/bootstrap/session-snapshot.sh
+            - scripts/bootstrap/setup-wsl.sh
+            - scripts/bootstrap/wsl-shell-hook.sh
+          merge_managed:
+
+          repo_owned:
+
+        merge_policies:
+          replace:
+
+          manual_review:
+
+        merge_guidance:
+
+        merge_managed_actions:
+
+        manual_review_actions:
+
+    - name: boards
+      enabled: true
+      prerequisites:
+        - core
+        - bootstrap
+      ownership:
+        variables:
+          azure_devops_org: this-ninja
+          azure_devops_project: this-ninja.github.io
+          azure_devops_org_url: https://dev.azure.com/this-ninja
+          work_item_agent_name: this-ninja.github.io-work-item-agent
+          work_item_agent_description: Drafts and refines Azure Boards Feature, Requirement, and Task work items for the this-ninja.github.io repository
+        overlay_templates:
+          - templates/baseline-overlays/.github/agents/repotemplatedev-work-item-agent.agent.md.tmpl
+          - templates/baseline-overlays/docs/runbooks/boards-crud.md.tmpl
+          - templates/baseline-overlays/scripts/bootstrap/verify-boards-crud.sh.tmpl
+        managed_files:
+          fully_managed:
+            - scripts/boards/close-work-item.sh
+            - scripts/boards/resolve-work-item.sh
+            - scripts/boards/show-work-item.sh
+            - scripts/boards/start-work-item.sh
+            - templates/work-items/feature.md
+            - templates/work-items/requirement.md
+            - templates/work-items/task.md
+          merge_managed:
+
+          repo_owned:
+
+        merge_policies:
+          replace:
+            - scripts/boards/common.sh
+            - scripts/bootstrap/login-ado.sh
+          manual_review:
+
+        merge_guidance:
+
+        merge_managed_actions:
+
+        manual_review_actions:
+
+    - name: codespaces
+      enabled: true
+      prerequisites:
+        - bootstrap
+      ownership:
+        variables:
+
+        overlay_templates:
+          - templates/baseline-overlays/.devcontainer/devcontainer.json.tmpl
+          - templates/baseline-overlays/.devcontainer/post-start.sh.tmpl
+          - templates/baseline-overlays/docs/setup/getting-started.md.tmpl
+        managed_files:
+          fully_managed:
+            - .vscode/extensions.json
+            - .vscode/settings.json
+            - .devcontainer/post-create.sh
+          merge_managed:
+
+          repo_owned:
+
+        merge_policies:
+          replace:
+
+          manual_review:
+
+        merge_guidance:
+
+        merge_managed_actions:
+
+        manual_review_actions:
+
+    - name: mcp
+      enabled: true
+      prerequisites:
+        - core
+      ownership:
+        variables:
+
+        overlay_templates:
+          - templates/baseline-overlays/mcp.config.yaml.tmpl
+        managed_files:
+          fully_managed:
+            - .codex/config.toml
+            - .vscode/mcp.json
+          merge_managed:
+            - .github/copilot-instructions.md
+            - scripts/generate-mcp-configs.js
+            - package.json
+          repo_owned:
+
+        merge_policies:
+          replace:
+            - .github/copilot-instructions.md
+            - scripts/generate-mcp-configs.js
+          manual_review:
+            - package.json
+        merge_guidance:
+          package.json: Merge script entries carefully with the target repo's existing package commands.
+        merge_managed_actions:
+
+        manual_review_actions:
+          package.json: merge_scripts

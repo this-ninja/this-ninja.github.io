@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="home-stack">
-  <section class="home-hero surface-card">
+  <section class="home-hero">
     <div class="home-hero__scene" aria-hidden="true">
       <div class="studio-rig"></div>
       <div class="studio-lights">
@@ -29,27 +29,27 @@ permalink: /
     </div>
 
     <div class="home-hero__content">
-      <p class="section-label">Tools for learning, performance, community, and momentum</p>
+      <p class="section-label">A connected platform for learning, performance, community, and action</p>
       <div class="home-intro__logo">
         <img src="{{ '/images/thisninja_name.png' | relative_url }}" alt="this.ninja logo" width="225" height="75">
       </div>
-      <h1 class="display-title">Build momentum with focused tools that move people forward.</h1>
-      <p class="home-hero__lede">THIS NINJA is a platform direction for thoughtful products designed to support learning, sharpen performance, strengthen community, and turn intent into action.</p>
+      <h1 class="display-title">Focused products. Shared momentum.</h1>
+      <p class="home-hero__lede">THIS NINJA brings together a family of tools designed to help people learn with intention, perform with clarity, connect with purpose, and move work forward.</p>
       <div class="home-actions">
         <a class="button button--primary" href="#products">Explore the platform</a>
-        <a class="button button--secondary" href="mailto:contact@this.ninja">Contact THIS NINJA</a>
+        <a class="button button--secondary" href="#support">View support links</a>
       </div>
     </div>
   </section>
 
-  <section class="home-section">
-    <div class="content-card page-hero page-hero--subtle home-section__intro">
+  <section class="home-section" id="products">
+    <div class="home-section__intro">
       <p class="section-label">Product Family</p>
-      <h2>Four focused directions, one shared system.</h2>
-      <p class="content-card__intro">Each product explores a different kind of progress while staying connected through the same calm, practical, modern platform foundation.</p>
+      <h2>Four focused directions, one system underneath.</h2>
+      <p class="content-card__intro">Each product carries its own purpose while staying anchored to the same platform language, visual system, and practical sense of momentum.</p>
     </div>
 
-    <div class="product-grid" id="products">
+    <div class="product-grid">
       <article class="product-card product-card--spark">
         <p class="section-label">Spark, Learning</p>
         <h3>Spark</h3>
@@ -76,10 +76,10 @@ permalink: /
     </div>
   </section>
 
-  <section class="content-column content-card content-card--compact home-support">
+  <section class="content-column home-support" id="support">
     <p class="section-label">Support And Policies</p>
-    <h2>Public pages for contact and SMS compliance.</h2>
-    <p class="content-card__intro">Questions can be sent to <a href="mailto:contact@this.ninja">contact@this.ninja</a>. SMS registration and compliance details remain available through the public pages below.</p>
+    <h2>Support links and public policy pages.</h2>
+    <p class="content-card__intro">For questions, contact <a href="mailto:contact@this.ninja">contact@this.ninja</a>. Public SMS policy pages remain available below.</p>
     <ul class="legal-links">
       <li><a href="{{ '/sms-privacy/' | relative_url }}">SMS Privacy Policy</a></li>
       <li><a href="{{ '/sms-terms/' | relative_url }}">SMS Terms and Conditions</a></li>

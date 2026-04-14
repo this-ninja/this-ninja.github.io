@@ -401,13 +401,21 @@ small {
 
 .home-stack {
   display: grid;
-  gap: var(--space-6);
+  gap: var(--space-5);
 }
 
 .home-hero {
   min-height: min(52rem, calc(100vh - 8rem));
   overflow: hidden;
   isolation: isolate;
+  border-radius: min(2.5rem, 4vw);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.16) 24%, rgba(255, 255, 255, 0.5) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent 40%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 36px 80px rgba(38, 47, 60, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .home-hero::before {
@@ -415,20 +423,34 @@ small {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.3) 32%, rgba(255, 255, 255, 0.8) 100%),
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.95), transparent 36%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.12) 36%, rgba(255, 255, 255, 0.82) 100%),
+    radial-gradient(circle at 50% 4%, rgba(255, 255, 255, 0.98), transparent 32%),
+    radial-gradient(ellipse at 50% 100%, rgba(255, 255, 255, 0.62), transparent 45%);
   z-index: -1;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 13rem;
+  background:
+    radial-gradient(ellipse at 50% 4%, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.24) 46%, transparent 75%);
+  pointer-events: none;
 }
 
 .home-hero__scene {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255, 255, 255, 0.9), transparent 36rem),
+    linear-gradient(180deg, rgba(244, 246, 249, 0.5), transparent 26%);
 }
 
 .studio-rig {
   position: absolute;
-  top: 2.25rem;
+  top: 1.65rem;
   left: 50%;
   width: min(42rem, calc(100% - 6rem));
   height: 0.55rem;
@@ -436,7 +458,7 @@ small {
   transform: translateX(-50%);
   background: linear-gradient(180deg, #afb4bc, #7f8793);
   box-shadow:
-    0 0.25rem 0.7rem rgba(63, 70, 82, 0.18),
+    0 0.35rem 1rem rgba(63, 70, 82, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
@@ -465,9 +487,9 @@ small {
 
 .studio-light {
   position: absolute;
-  top: 2.8rem;
-  width: 12rem;
-  height: 25rem;
+  top: 2.25rem;
+  width: 13rem;
+  height: 28rem;
   transform: translateX(-50%);
 }
 
@@ -488,23 +510,23 @@ small {
   top: 0;
   left: 50%;
   width: 0.14rem;
-  height: 5rem;
+  height: 5.8rem;
   transform: translateX(-50%);
   background: linear-gradient(180deg, rgba(116, 122, 134, 0.85), rgba(116, 122, 134, 0.18));
 }
 
 .studio-light__fixture {
   position: absolute;
-  top: 4.8rem;
+  top: 5.45rem;
   left: 50%;
-  width: 4rem;
-  height: 2.2rem;
+  width: 4.2rem;
+  height: 2.35rem;
   transform: translateX(-50%);
   border-radius: 1.2rem 1.2rem 1.6rem 1.6rem;
   background:
     linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(177, 184, 194, 0.94));
   box-shadow:
-    0 0.7rem 1.8rem rgba(83, 91, 103, 0.16),
+    0 0.85rem 2rem rgba(83, 91, 103, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
@@ -517,44 +539,62 @@ small {
     linear-gradient(180deg, rgba(99, 108, 122, 0.82), rgba(223, 228, 235, 0.92));
 }
 
+.studio-light__fixture::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.4rem;
+  width: 1.15rem;
+  height: 0.5rem;
+  transform: translateX(-50%);
+  border-radius: 0 0 1rem 1rem;
+  background: rgba(112, 120, 134, 0.5);
+}
+
 .light-projection {
   position: absolute;
-  top: 6.3rem;
+  top: 7rem;
   left: 50%;
-  width: 18rem;
-  height: 20rem;
+  width: 21rem;
+  height: 23rem;
   transform: translateX(-50%);
-  clip-path: polygon(47% 0%, 53% 0%, 82% 100%, 18% 100%);
-  opacity: 0.82;
-  filter: blur(6px);
+  clip-path: polygon(48.5% 0%, 51.5% 0%, 79% 100%, 21% 100%);
+  opacity: 0.9;
+  filter: blur(7px);
 }
 
 .light-projection--red {
-  background: linear-gradient(180deg, rgba(255, 77, 77, 0.44), rgba(255, 77, 77, 0.06));
+  background:
+    linear-gradient(180deg, rgba(255, 77, 77, 0.52), rgba(255, 77, 77, 0.07)),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.35), transparent 34%);
 }
 
 .light-projection--green {
-  background: linear-gradient(180deg, rgba(77, 255, 122, 0.4), rgba(77, 255, 122, 0.06));
+  background:
+    linear-gradient(180deg, rgba(77, 255, 122, 0.48), rgba(77, 255, 122, 0.07)),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.32), transparent 34%);
 }
 
 .light-projection--blue {
-  background: linear-gradient(180deg, rgba(77, 166, 255, 0.44), rgba(77, 166, 255, 0.06));
+  background:
+    linear-gradient(180deg, rgba(77, 166, 255, 0.54), rgba(77, 166, 255, 0.07)),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.34), transparent 34%);
 }
 
 .studio-floor-glow {
   position: absolute;
   left: 50%;
-  right: 4%;
-  bottom: -2.5rem;
-  height: 17rem;
+  bottom: -2rem;
+  height: 18rem;
   transform: translateX(-50%);
-  width: min(78rem, 118%);
+  width: min(82rem, 124%);
   background:
-    radial-gradient(ellipse at 28% 42%, rgba(255, 77, 77, 0.24), transparent 21%),
-    radial-gradient(ellipse at 50% 38%, rgba(77, 255, 122, 0.24), transparent 24%),
-    radial-gradient(ellipse at 72% 42%, rgba(77, 166, 255, 0.26), transparent 22%),
-    radial-gradient(ellipse at 50% 58%, rgba(255, 232, 102, 0.2), transparent 26%);
-  filter: blur(10px);
+    radial-gradient(ellipse at 28% 42%, rgba(255, 77, 77, 0.33), transparent 20%),
+    radial-gradient(ellipse at 50% 34%, rgba(77, 255, 122, 0.3), transparent 23%),
+    radial-gradient(ellipse at 72% 42%, rgba(77, 166, 255, 0.34), transparent 21%),
+    radial-gradient(ellipse at 50% 55%, rgba(255, 232, 102, 0.26), transparent 24%),
+    radial-gradient(ellipse at 50% 12%, rgba(255, 255, 255, 0.5), transparent 42%);
+  filter: blur(12px);
 }
 
 .home-hero__content {
@@ -563,20 +603,50 @@ small {
   justify-items: center;
   align-content: center;
   min-height: min(44rem, calc(100vh - 12rem));
-  padding: 8.5rem 1rem 3.5rem;
+  padding: 8.25rem 1rem 4.5rem;
   text-align: center;
   z-index: 1;
 }
 
+.home-hero__content::before {
+  content: "";
+  position: absolute;
+  inset: auto 50% 2.4rem;
+  width: min(44rem, calc(100% - 2rem));
+  height: 18rem;
+  transform: translateX(-50%);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.48));
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  box-shadow:
+    0 20px 44px rgba(36, 46, 62, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
 .page-home .display-title {
-  max-width: 11ch;
+  max-width: 10.2ch;
   font-size: clamp(2.8rem, 7vw, 6rem);
 }
 
 .home-hero__lede {
-  max-width: 42rem;
+  max-width: 40rem;
   color: var(--text-secondary);
   font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+}
+
+.home-section {
+  margin-top: calc(var(--space-8) * -0.45);
+  position: relative;
+  z-index: 2;
+}
+
+.home-section__intro {
+  width: min(100%, 40rem);
+  margin: 0 0 var(--space-5);
+  padding-inline: var(--space-2);
 }
 
 .home-section__intro h2,
@@ -594,12 +664,15 @@ small {
   position: relative;
   min-height: 16rem;
   padding: var(--space-5);
-  border: 1px solid var(--border-soft);
+  border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: var(--radius-lg);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.9)),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.1), transparent 55%);
-  box-shadow: var(--shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.72)),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.24), transparent 55%);
+  box-shadow:
+    0 22px 44px rgba(39, 49, 63, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
   overflow: hidden;
 }
 
@@ -612,6 +685,14 @@ small {
   border-radius: 50%;
   filter: blur(10px);
   opacity: 0.6;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 45%);
+  pointer-events: none;
 }
 
 .product-card h3 {
@@ -640,23 +721,39 @@ small {
 }
 
 .product-card--spark {
-  border-color: rgba(77, 255, 122, 0.22);
+  border-color: rgba(77, 255, 122, 0.26);
 }
 
 .product-card--pulse {
-  border-color: rgba(77, 166, 255, 0.22);
+  border-color: rgba(77, 166, 255, 0.26);
 }
 
 .product-card--reach {
-  border-color: rgba(255, 232, 102, 0.28);
+  border-color: rgba(255, 232, 102, 0.3);
 }
 
 .product-card--stride {
-  border-color: rgba(255, 77, 77, 0.2);
+  border-color: rgba(255, 77, 77, 0.24);
 }
 
 .home-support {
-  margin-top: var(--space-2);
+  margin-top: var(--space-4);
+  padding: var(--space-5);
+  border: 1px solid rgba(123, 136, 151, 0.12);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.52));
+  box-shadow: 0 14px 28px rgba(42, 52, 66, 0.05);
+}
+
+.home-support .section-label,
+.home-support .content-card__intro,
+.home-support .legal-links a {
+  color: var(--text-secondary);
+}
+
+.home-support h2 {
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  margin-bottom: var(--space-3);
 }
 
 @media (max-width: 640px) {
@@ -686,6 +783,10 @@ small {
   .button {
     width: 100%;
   }
+
+  .home-support {
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 960px) {
@@ -698,12 +799,22 @@ small {
     padding-top: 7.5rem;
   }
 
+  .home-hero__content::before {
+    height: 16rem;
+    bottom: 2rem;
+  }
+
+  .home-section {
+    margin-top: calc(var(--space-7) * -0.3);
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .studio-light {
     width: 10rem;
+    height: 23rem;
   }
 
   .studio-light--red {
@@ -772,6 +883,20 @@ small {
   .home-hero__content {
     padding-top: 6.25rem;
     padding-bottom: 1rem;
+  }
+
+  .home-hero__content::before {
+    width: calc(100% - 1rem);
+    height: 15rem;
+    bottom: 0.5rem;
+  }
+
+  .home-section {
+    margin-top: 0;
+  }
+
+  .home-section__intro {
+    padding-inline: 0;
   }
 
   .product-grid {

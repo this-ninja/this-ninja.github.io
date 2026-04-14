@@ -1,1 +1,16 @@
 theme: jekyll-theme-time-machine
+
+exclude:
+  - README.md
+  - AGENTS.md
+  - package.json
+  - package-lock.json
+  - node_modules/
+  - .baseline/
+  - .codex/
+  - .devcontainer/
+  - .github/
+  - .vscode/
+  - docs/
+  - scripts/
+  - templates/

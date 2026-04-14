@@ -9,8 +9,3 @@ url = "https://api.githubcopilot.com/mcp/"
 type = "stdio"
 command = "npx"
 args = ["-y", "@modelcontextprotocol/server-filesystem", "."]
-
-[mcp_servers.ado]
-type = "stdio"
-command = "npx"
-args = ["-y", "@azure-devops/mcp", "${AZURE_DEVOPS_ORG}"]

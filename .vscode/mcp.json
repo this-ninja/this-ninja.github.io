@@ -12,15 +12,6 @@
         "@modelcontextprotocol/server-filesystem",
         "${workspaceFolder}"
       ]
-    },
-    "ado": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@azure-devops/mcp",
-        "${env:AZURE_DEVOPS_ORG}"
-      ]
     }
   }
 }

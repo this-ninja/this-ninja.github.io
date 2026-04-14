@@ -1,13 +1,19 @@
 <footer class="site-footer">
   <div class="container site-footer__inner">
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/sms-privacy/' | relative_url }}">SMS Privacy</a>
-      <a href="{{ '/sms-terms/' | relative_url }}">SMS Terms</a>
-      <a href="{{ '/sms-consent/' | relative_url }}">SMS Consent</a>
-    </nav>
-    <p class="site-footer__contact">
-      <a href="mailto:contact@this.ninja">contact@this.ninja</a>
-    </p>
+    <div class="site-footer__group">
+      <p class="section-label">Site</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/sms-privacy/' | relative_url }}">SMS Privacy</a>
+        <a href="{{ '/sms-terms/' | relative_url }}">SMS Terms</a>
+        <a href="{{ '/sms-consent/' | relative_url }}">SMS Consent</a>
+      </nav>
+    </div>
+    <div class="site-footer__group">
+      <p class="section-label">Contact</p>
+      <p class="site-footer__contact">
+        <a href="mailto:contact@this.ninja">contact@this.ninja</a>
+      </p>
+    </div>
   </div>
 </footer>

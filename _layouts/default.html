@@ -3,7 +3,8 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="page-{{ page.layout | default: 'default' }}{% if page.url == '/' %} page-home{% else %} page-interior{% endif %}">
+    <div class="site-atmosphere" aria-hidden="true"></div>
     <div class="site-shell">
       {% include site-header.html %}
       <main class="site-main" id="main-content">

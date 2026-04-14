@@ -7,25 +7,13 @@ permalink: /
 <div class="home-stack">
   <section class="home-hero">
     <div class="home-hero__scene" aria-hidden="true">
-      <div class="studio-rig"></div>
-      <div class="studio-lights">
-        <div class="studio-light studio-light--red">
-          <span class="studio-light__cable"></span>
-          <span class="studio-light__fixture"></span>
-          <span class="light-projection light-projection--red"></span>
-        </div>
-        <div class="studio-light studio-light--green">
-          <span class="studio-light__cable"></span>
-          <span class="studio-light__fixture"></span>
-          <span class="light-projection light-projection--green"></span>
-        </div>
-        <div class="studio-light studio-light--blue">
-          <span class="studio-light__cable"></span>
-          <span class="studio-light__fixture"></span>
-          <span class="light-projection light-projection--blue"></span>
-        </div>
-      </div>
-      <div class="studio-floor-glow"></div>
+      <span class="home-hero__source home-hero__source--red"></span>
+      <span class="home-hero__source home-hero__source--green"></span>
+      <span class="home-hero__source home-hero__source--blue"></span>
+      <span class="home-hero__beam home-hero__beam--red"></span>
+      <span class="home-hero__beam home-hero__beam--green"></span>
+      <span class="home-hero__beam home-hero__beam--blue"></span>
+      <span class="home-hero__floor"></span>
     </div>
 
     <div class="home-hero__content">

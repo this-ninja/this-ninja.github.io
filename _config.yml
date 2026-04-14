@@ -1,4 +1,5 @@
-theme: jekyll-theme-time-machine
+title: this.ninja
+description: THIS NINJA LLC website and SMS policy pages.
 
 exclude:
   - README.md

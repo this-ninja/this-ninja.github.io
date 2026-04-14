@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="site-shell">
+      {% include site-header.html %}
+      <main class="site-main" id="main-content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </main>
+      {% include site-footer.html %}
+    </div>
+  </body>
+</html>

@@ -1,9 +1,8 @@
 ---
+layout: page
 title: SMS Terms and Conditions
 permalink: /sms-terms/
 ---
-
-# SMS Terms and Conditions
 
 By opting in to receive SMS messages from THIS NINJA LLC ("THIS NINJA", "we", "us", or "our"), you agree to these SMS Terms and Conditions.
 

@@ -1,9 +1,8 @@
 ---
+layout: page
 title: SMS Privacy Policy
 permalink: /sms-privacy/
 ---
-
-# SMS Privacy Policy
 
 THIS NINJA LLC ("THIS NINJA", "we", "us", or "our") may use SMS text messaging to communicate with individuals who have provided consent to receive text messages from us.
 

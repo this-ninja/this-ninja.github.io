@@ -1,9 +1,8 @@
 ---
+layout: page
 title: SMS Consent
 permalink: /sms-consent/
 ---
-
-# SMS Consent
 
 THIS NINJA LLC requests SMS consent before sending text messages for conversational business communications.
 

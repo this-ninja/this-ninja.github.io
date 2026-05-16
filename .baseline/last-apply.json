@@ -1,7 +1,7 @@
 {
   "baseline_name": "repo-foundation",
   "baseline_version": "0.1.0",
-  "source_repository": "repotemplatedev",
+  "source_repository": "repo-foundry",
   "source_commit": "e5680d4",
   "timestamp": "2026-04-13T23:54:27.231Z",
   "target_path": "/home/jdp/repos/github/this-ninja/this-ninja.github.io",
@@ -12,6 +12,13 @@
     "codespaces",
     "mcp"
   ],
+  "module_versions": {
+    "core": "0.1.0",
+    "bootstrap": "0.1.0",
+    "boards": "0.1.0",
+    "codespaces": "0.1.0",
+    "mcp": "0.1.0"
+  },
   "files_written": [
     ".codex/config.toml",
     ".devcontainer/devcontainer.json",

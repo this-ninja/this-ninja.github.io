@@ -1,7 +1,7 @@
 baseline:
   name: repo-foundation
   version: 0.1.0
-  source_repo: repotemplatedev
+  source_repo: repo-foundry
   source_commit: e5680d4
   shared:
     variables:
@@ -34,6 +34,7 @@ baseline:
 
   modules:
     - name: core
+      version: 0.1.0
       enabled: true
       prerequisites:
 
@@ -70,6 +71,7 @@ baseline:
         manual_review_actions:
           README.md: target_rewrite
     - name: bootstrap
+      version: 0.1.0
       enabled: true
       prerequisites:
 
@@ -106,6 +108,7 @@ baseline:
         manual_review_actions:
 
     - name: boards
+      version: 0.1.0
       enabled: true
       prerequisites:
         - core
@@ -147,6 +150,7 @@ baseline:
         manual_review_actions:
 
     - name: codespaces
+      version: 0.1.0
       enabled: true
       prerequisites:
         - bootstrap
@@ -178,6 +182,7 @@ baseline:
         manual_review_actions:
 
     - name: mcp
+      version: 0.1.0
       enabled: true
       prerequisites:
         - core

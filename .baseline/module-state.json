@@ -1,0 +1,594 @@
+{
+  "operation": "module-adopt-state",
+  "baseline_name": "repo-foundation",
+  "baseline_version": "0.1.0",
+  "source_repository": "repo-foundry",
+  "source_commit": "e5680d4",
+  "requested_modules": [],
+  "prerequisite_modules": [],
+  "applied_modules": [
+    "boards",
+    "bootstrap",
+    "codespaces",
+    "core",
+    "mcp"
+  ],
+  "resolved_module_order": [
+    "core",
+    "bootstrap",
+    "boards",
+    "codespaces",
+    "mcp"
+  ],
+  "module_versions": {
+    "core": "0.1.0",
+    "bootstrap": "0.1.0",
+    "boards": "0.1.0",
+    "codespaces": "0.1.0",
+    "mcp": "0.1.0"
+  },
+  "file_state": {
+    "schema_version": 1,
+    "files": [
+      {
+        "relative_path": ".codex/config.toml",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "multiple",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "125f71c5adb854d8d817c887c4103adac6042bde8e9d6efbd9f3170c32ac8609"
+        },
+        "kind": "file",
+        "size_bytes": 309
+      },
+      {
+        "relative_path": ".devcontainer/devcontainer.json",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "612962ca623f6b881b074221aa384202ce4b58ab4e1772d18ee276b72c10b166"
+        },
+        "kind": "file",
+        "size_bytes": 1059
+      },
+      {
+        "relative_path": ".devcontainer/post-create.sh",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "fa0fc8a10d4e1f833c00827c78dfa62bd27228bb3cc4b4d2d02d77ee7a63f2c4"
+        },
+        "kind": "file",
+        "size_bytes": 272
+      },
+      {
+        "relative_path": ".devcontainer/post-start.sh",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "45e6d0619d0208c045ebe9c06aa1e029b61b21ada74f2bc501052310aa579b8d"
+        },
+        "kind": "file",
+        "size_bytes": 896
+      },
+      {
+        "relative_path": ".github/agents/repotemplatedev-work-item-agent.agent.md",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "e88cb691b5a22e8ebb59b665f8a0d664e7d438ad49eb584c5d624ea523dd098e"
+        },
+        "kind": "file",
+        "size_bytes": 679
+      },
+      {
+        "relative_path": ".github/copilot-instructions.md",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "multiple",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "26b85cfa4cfd0a9c99f755986ef507e069725c37bf30aeb46e521b9fd269410a"
+        },
+        "kind": "file",
+        "size_bytes": 520
+      },
+      {
+        "relative_path": ".gitignore",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b390b80d4f445dcf26b436bbb0de8a0a445e8241ff75e8fd5fd48c507ebd2a63"
+        },
+        "kind": "file",
+        "size_bytes": 58
+      },
+      {
+        "relative_path": ".vscode/extensions.json",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "aab798ecd229b096b6ce92493292db945bd98a9ee1966d384f4250f3bb27cca5"
+        },
+        "kind": "file",
+        "size_bytes": 313
+      },
+      {
+        "relative_path": ".vscode/mcp.json",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "multiple",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "43cfc7978bf90c54a78e6a25685198fa50ae05ca7bdcb08ab68889eacf284be4"
+        },
+        "kind": "file",
+        "size_bytes": 309
+      },
+      {
+        "relative_path": ".vscode/settings.json",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "370b321dc227ec7ec3a6303b100c4e9370d91704051620937e72cbb39ab38e43"
+        },
+        "kind": "file",
+        "size_bytes": 128
+      },
+      {
+        "relative_path": "AGENTS.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "75b25552a2b913a73d52e30d437e059125787d7f3e601d0c831b72bcc6a277dd"
+        },
+        "kind": "file",
+        "size_bytes": 2165
+      },
+      {
+        "relative_path": "docs/operations/manual-steps.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "merge-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "beace4eb7fa5bfc2f6e3545911c444e5e90f213787bdc827e71bce217b258bbf"
+        },
+        "kind": "file",
+        "size_bytes": 2815
+      },
+      {
+        "relative_path": "docs/platform/repo-contract.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "merge-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "fa5f1978379506787a11f744e020366d62437f63e03116fec82c091de40690ac"
+        },
+        "kind": "file",
+        "size_bytes": 3705
+      },
+      {
+        "relative_path": "docs/reference/current-state.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "f1fdac870fc63f10a460f597352f3330ccfcdb21487d39a96bc537c51a89dd73"
+        },
+        "kind": "file",
+        "size_bytes": 2028
+      },
+      {
+        "relative_path": "docs/runbooks/agent-session-start.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "d098742b72ed44bff1d78b3eecc0f4ffbd3d20f1c724f8a9863fbd3adf2c2c7b"
+        },
+        "kind": "file",
+        "size_bytes": 2063
+      },
+      {
+        "relative_path": "docs/runbooks/boards-crud.md",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "96017c203a53efe9f196207d8bdf093c0a2e62a23fe5e9c59defff0cfcd3eb32"
+        },
+        "kind": "file",
+        "size_bytes": 2197
+      },
+      {
+        "relative_path": "docs/runbooks/session-restart-checklist.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "03aaabe19900e7669692c9ee1f039c223943548e77fb4618676ab37d2ccc9767"
+        },
+        "kind": "file",
+        "size_bytes": 3059
+      },
+      {
+        "relative_path": "docs/setup/getting-started.md",
+        "module_name": "codespaces",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "f456611bdd3be59c3330b01038f8504eeb8edc0ecd01f9093d263ab55c19295d"
+        },
+        "kind": "file",
+        "size_bytes": 598
+      },
+      {
+        "relative_path": "mcp.config.yaml",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "43cfc7978bf90c54a78e6a25685198fa50ae05ca7bdcb08ab68889eacf284be4"
+        },
+        "kind": "file",
+        "size_bytes": 309
+      },
+      {
+        "relative_path": "package.json",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "merge-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "e034c99d50383fa785e086ff456c09d274c89d6e7c8570cafc23a972e403f6bc"
+        },
+        "kind": "file",
+        "size_bytes": 446
+      },
+      {
+        "relative_path": "scripts/boards/close-work-item.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "55299d565ce452001f67a8463d711c688f318c47de209176a3a51198003a3822"
+        },
+        "kind": "file",
+        "size_bytes": 389
+      },
+      {
+        "relative_path": "scripts/boards/common.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "merge-replace",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "8ffd77055d50f51f801465676fcf21dd98d2288e8a34c8a868ea63c4d49b8734"
+        },
+        "kind": "file",
+        "size_bytes": 1282
+      },
+      {
+        "relative_path": "scripts/boards/resolve-work-item.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "946189b425f38ad0fe3b6af5c4b3c21e2372e05742bf8d6629e31e60c18db34e"
+        },
+        "kind": "file",
+        "size_bytes": 391
+      },
+      {
+        "relative_path": "scripts/boards/show-work-item.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b8f9056dcd79f9f012d4c175896050fd3ee0fa59492ca3f99b03a870ca3ca4cf"
+        },
+        "kind": "file",
+        "size_bytes": 593
+      },
+      {
+        "relative_path": "scripts/boards/start-work-item.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "3125fc250d70435f900275084f8dab15cf520b29ff6831e68481532e3de44305"
+        },
+        "kind": "file",
+        "size_bytes": 389
+      },
+      {
+        "relative_path": "scripts/bootstrap/check-prereqs.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "506da47f9b75a936bb2e606ac58318c691e12e88071aa7b85e7f305ff94e5030"
+        },
+        "kind": "file",
+        "size_bytes": 811
+      },
+      {
+        "relative_path": "scripts/bootstrap/cleanup-git-hooks.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "09453d73b02571db3ef1b0fe108ea7d09f9ad29f4d76fd3d7a07e36f7e346a20"
+        },
+        "kind": "file",
+        "size_bytes": 979
+      },
+      {
+        "relative_path": "scripts/bootstrap/env-report.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "7925e217552726e9c86c148b8acc3937d1f585e60ad7461540a4c7150e7afb36"
+        },
+        "kind": "file",
+        "size_bytes": 825
+      },
+      {
+        "relative_path": "scripts/bootstrap/install-linux-tooling.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "0176c4e4fc9e83e838f19cb26aa510030c8b77602ffbed82a3200ae03a2f4f58"
+        },
+        "kind": "file",
+        "size_bytes": 2270
+      },
+      {
+        "relative_path": "scripts/bootstrap/login-ado.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "merge-replace",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "559ff08c847af6e55fcdb8a8caa60e7a8be21c275cb415a4fb91d259ce741674"
+        },
+        "kind": "file",
+        "size_bytes": 914
+      },
+      {
+        "relative_path": "scripts/bootstrap/login-azure.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "d71e53a7e9e54f8f21986c19a7ee46b3bba76589ea6f744784858d84878a02f0"
+        },
+        "kind": "file",
+        "size_bytes": 916
+      },
+      {
+        "relative_path": "scripts/bootstrap/login-github.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b17a69d2a5d3ece192e135d25ba343d5099dc4f45c5a069c1113da82b66e6e29"
+        },
+        "kind": "file",
+        "size_bytes": 615
+      },
+      {
+        "relative_path": "scripts/bootstrap/repo-env.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "abb357494317eee6d798f38fb9f5c10465500118adbd2bf5e1c861bc5a99ff3d"
+        },
+        "kind": "file",
+        "size_bytes": 218
+      },
+      {
+        "relative_path": "scripts/bootstrap/session-init.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "3bf92accec6de60b520f9e471bb987b0a0f9b9c2964b9cf866763bce63cf19f4"
+        },
+        "kind": "file",
+        "size_bytes": 1955
+      },
+      {
+        "relative_path": "scripts/bootstrap/session-snapshot.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "359ba035fa99dc82da39fc578a4f34c75941e3221ca5e00364ed94e6cde2a70f"
+        },
+        "kind": "file",
+        "size_bytes": 1276
+      },
+      {
+        "relative_path": "scripts/bootstrap/setup-wsl.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "afb68acf5e28728631aad72a7077bef3aeb5523129e83b2dd23035e756ec238e"
+        },
+        "kind": "file",
+        "size_bytes": 1353
+      },
+      {
+        "relative_path": "scripts/bootstrap/verify-boards-crud.sh",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "a322bf2faafdcf09af7fdbae4385cba2d4e86f97646c76d270ae2bb801e932f4"
+        },
+        "kind": "file",
+        "size_bytes": 3216
+      },
+      {
+        "relative_path": "scripts/bootstrap/wsl-shell-hook.sh",
+        "module_name": "bootstrap",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "58cc2447f5451ee9673ba84c66fe7467d580886f5168040bf6c026d4cddfc66a"
+        },
+        "kind": "file",
+        "size_bytes": 570
+      },
+      {
+        "relative_path": "scripts/generate-mcp-configs.js",
+        "module_name": "mcp",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "multiple",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "d30bfd131a9c00f4a343949fe1da7d5b691e76d7d28f2bcaa402335359dc5795"
+        },
+        "kind": "file",
+        "size_bytes": 3119
+      },
+      {
+        "relative_path": "templates/session-handoff.md",
+        "module_name": "core",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "6c5fd57078da03e3fd629f99f8e41336de83d02fab7805e6b6605d088684a812"
+        },
+        "kind": "file",
+        "size_bytes": 472
+      },
+      {
+        "relative_path": "templates/work-items/feature.md",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "cf07319ddecab7420f02fd1950e84fed83cadf392ee1e939096e75c0b0c39b2e"
+        },
+        "kind": "file",
+        "size_bytes": 467
+      },
+      {
+        "relative_path": "templates/work-items/requirement.md",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "69e31c156722218ec7a69c120413d154e36ff6ac75559a13cdf174df9b220203"
+        },
+        "kind": "file",
+        "size_bytes": 448
+      },
+      {
+        "relative_path": "templates/work-items/task.md",
+        "module_name": "boards",
+        "module_version": "0.1.0",
+        "ownership_mode": "managed",
+        "write_type": "fully-managed",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "63c9dc6748b1e2a49ce0079a60102813c3f615d47cadd6dcc45a54fa67ef3de9"
+        },
+        "kind": "file",
+        "size_bytes": 391
+      }
+    ]
+  }
+}

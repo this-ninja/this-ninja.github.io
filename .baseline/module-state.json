@@ -23,7 +23,7 @@
   "module_versions": {
     "core": "0.1.0",
     "bootstrap": "0.1.0",
-    "boards": "0.1.0",
+    "boards": "0.1.2",
     "codespaces": "0.1.0",
     "mcp": "0.1.0"
   },
@@ -88,6 +88,19 @@
         "module_version": "0.1.0",
         "ownership_mode": "managed",
         "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "e88cb691b5a22e8ebb59b665f8a0d664e7d438ad49eb584c5d624ea523dd098e"
+        },
+        "kind": "file",
+        "size_bytes": 679
+      },
+      {
+        "relative_path": ".github/agents/work-item-agent.agent.md",
+        "module_name": "boards",
+        "module_version": "0.1.2",
+        "ownership_mode": "managed",
+        "write_type": "safe_create",
         "checksum": {
           "algorithm": "sha256",
           "value": "e88cb691b5a22e8ebb59b665f8a0d664e7d438ad49eb584c5d624ea523dd098e"

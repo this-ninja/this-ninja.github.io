@@ -108,7 +108,7 @@ baseline:
         manual_review_actions:
 
     - name: boards
-      version: 0.1.0
+      version: 0.1.2
       enabled: true
       prerequisites:
         - core

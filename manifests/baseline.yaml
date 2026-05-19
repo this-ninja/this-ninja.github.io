@@ -34,7 +34,7 @@ baseline:
 
   modules:
     - name: core
-      version: 0.1.0
+      version: 0.2.0
       enabled: true
       prerequisites:
 
@@ -108,7 +108,7 @@ baseline:
         manual_review_actions:
 
     - name: boards
-      version: 0.1.0
+      version: 0.1.2
       enabled: true
       prerequisites:
         - core
@@ -150,7 +150,7 @@ baseline:
         manual_review_actions:
 
     - name: codespaces
-      version: 0.1.0
+      version: 0.2.0
       enabled: true
       prerequisites:
         - bootstrap

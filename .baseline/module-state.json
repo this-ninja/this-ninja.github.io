@@ -21,10 +21,10 @@
     "mcp"
   ],
   "module_versions": {
-    "core": "0.1.0",
+    "core": "0.2.0",
     "bootstrap": "0.1.0",
-    "boards": "0.1.0",
-    "codespaces": "0.1.0",
+    "boards": "0.1.2",
+    "codespaces": "0.2.0",
     "mcp": "0.1.0"
   },
   "file_state": {
@@ -72,15 +72,15 @@
       {
         "relative_path": ".devcontainer/post-start.sh",
         "module_name": "codespaces",
-        "module_version": "0.1.0",
+        "module_version": "0.2.0",
         "ownership_mode": "managed",
-        "write_type": "overlay",
+        "write_type": "safe_update",
         "checksum": {
           "algorithm": "sha256",
-          "value": "45e6d0619d0208c045ebe9c06aa1e029b61b21ada74f2bc501052310aa579b8d"
+          "value": "503d06967073f4c4cc9a7fad621b9b29fae3e332dd64a122ea2494ed52b140d0"
         },
         "kind": "file",
-        "size_bytes": 896
+        "size_bytes": 2822
       },
       {
         "relative_path": ".github/agents/repotemplatedev-work-item-agent.agent.md",
@@ -88,6 +88,19 @@
         "module_version": "0.1.0",
         "ownership_mode": "managed",
         "write_type": "overlay",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "e88cb691b5a22e8ebb59b665f8a0d664e7d438ad49eb584c5d624ea523dd098e"
+        },
+        "kind": "file",
+        "size_bytes": 679
+      },
+      {
+        "relative_path": ".github/agents/work-item-agent.agent.md",
+        "module_name": "boards",
+        "module_version": "0.1.2",
+        "ownership_mode": "managed",
+        "write_type": "safe_create",
         "checksum": {
           "algorithm": "sha256",
           "value": "e88cb691b5a22e8ebb59b665f8a0d664e7d438ad49eb584c5d624ea523dd098e"
@@ -279,16 +292,16 @@
       },
       {
         "relative_path": "package.json",
-        "module_name": "mcp",
-        "module_version": "0.1.0",
-        "ownership_mode": "managed",
-        "write_type": "merge-managed",
+        "module_name": "core",
+        "module_version": "0.2.0",
+        "ownership_mode": "consumer_owned",
+        "write_type": "safe_update",
         "checksum": {
           "algorithm": "sha256",
-          "value": "e034c99d50383fa785e086ff456c09d274c89d6e7c8570cafc23a972e403f6bc"
+          "value": "c1f6873e51168aee73dafcc40c7ad70360bcffdae79d5a0bc2f80cd6e1dc036b"
         },
         "kind": "file",
-        "size_bytes": 446
+        "size_bytes": 500
       },
       {
         "relative_path": "scripts/boards/close-work-item.sh",
@@ -536,6 +549,19 @@
         },
         "kind": "file",
         "size_bytes": 3119
+      },
+      {
+        "relative_path": "scripts/module-status.js",
+        "module_name": "core",
+        "module_version": "0.2.0",
+        "ownership_mode": "managed",
+        "write_type": "safe_create",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "3c6ed86d25671d6beb0a6d991ef80304664d8cd4d1c6998d3dc87ff0600bf1e7"
+        },
+        "kind": "file",
+        "size_bytes": 11828
       },
       {
         "relative_path": "templates/session-handoff.md",

@@ -1,11 +1,11 @@
 {
   "operation": "module-update",
   "target_path": "/home/john/repos/github/this-ninja/this-ninja.github.io",
-  "module": "boards",
+  "module": "codespaces",
   "previous_version": "0.1.0",
-  "requested_version": "0.1.2",
+  "requested_version": "0.2.0",
   "files_updated": [
-    ".github/agents/work-item-agent.agent.md"
+    ".devcontainer/post-start.sh"
   ],
   "files_skipped": [],
   "manual_review_files": [],
@@ -34,5 +34,5 @@
     "recommended_lockfile_commands": [],
     "details": "package.json not required by enabled modules"
   },
-  "timestamp": "2026-05-19T09:00:35.130Z"
+  "timestamp": "2026-05-19T09:00:36.910Z"
 }

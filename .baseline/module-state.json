@@ -24,7 +24,7 @@
     "core": "0.1.0",
     "bootstrap": "0.1.0",
     "boards": "0.1.2",
-    "codespaces": "0.1.0",
+    "codespaces": "0.2.0",
     "mcp": "0.1.0"
   },
   "file_state": {
@@ -72,15 +72,15 @@
       {
         "relative_path": ".devcontainer/post-start.sh",
         "module_name": "codespaces",
-        "module_version": "0.1.0",
+        "module_version": "0.2.0",
         "ownership_mode": "managed",
-        "write_type": "overlay",
+        "write_type": "safe_update",
         "checksum": {
           "algorithm": "sha256",
-          "value": "45e6d0619d0208c045ebe9c06aa1e029b61b21ada74f2bc501052310aa579b8d"
+          "value": "503d06967073f4c4cc9a7fad621b9b29fae3e332dd64a122ea2494ed52b140d0"
         },
         "kind": "file",
-        "size_bytes": 896
+        "size_bytes": 2822
       },
       {
         "relative_path": ".github/agents/repotemplatedev-work-item-agent.agent.md",

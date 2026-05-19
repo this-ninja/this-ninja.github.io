@@ -1,38 +1,48 @@
 {
   "operation": "module-update",
   "target_path": "/home/john/repos/github/this-ninja/this-ninja.github.io",
-  "module": "codespaces",
+  "module": "core",
   "previous_version": "0.1.0",
   "requested_version": "0.2.0",
   "files_updated": [
-    ".devcontainer/post-start.sh"
+    "scripts/module-status.js"
   ],
-  "files_skipped": [],
+  "files_skipped": [
+    "package.json"
+  ],
   "manual_review_files": [],
   "blocked_files": [],
   "package_contract_merge": {
-    "status": "not_required",
-    "required_by_modules": [],
-    "added_scripts": [],
+    "status": "merged",
+    "required_by_modules": [
+      "core"
+    ],
+    "added_scripts": [
+      "module:status"
+    ],
     "conflicting_scripts": [],
     "added_dev_dependencies": [],
     "conflicting_dev_dependencies": [],
     "lockfile_refresh_required": false,
     "lockfile_refresh_reason": "package contract does not add or change devDependencies",
     "recommended_lockfile_commands": [],
-    "details": "package.json not required by enabled modules"
+    "details": "merged consumer package contract entries required by module(s): core"
   },
   "package_script_merge": {
-    "status": "not_required",
-    "required_by_modules": [],
-    "added_scripts": [],
+    "status": "merged",
+    "required_by_modules": [
+      "core"
+    ],
+    "added_scripts": [
+      "module:status"
+    ],
     "conflicting_scripts": [],
     "added_dev_dependencies": [],
     "conflicting_dev_dependencies": [],
     "lockfile_refresh_required": false,
     "lockfile_refresh_reason": "package contract does not add or change devDependencies",
     "recommended_lockfile_commands": [],
-    "details": "package.json not required by enabled modules"
+    "details": "merged consumer package contract entries required by module(s): core"
   },
-  "timestamp": "2026-05-19T09:00:36.910Z"
+  "timestamp": "2026-05-19T09:00:38.629Z"
 }
